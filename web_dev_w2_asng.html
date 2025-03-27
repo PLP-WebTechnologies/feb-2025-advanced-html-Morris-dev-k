@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="John Doe - Passionate Web Developer and Digital Marketer crafting innovative, responsive websites that convert.">
+    <title>John Doe | Web Development Portfolio</title>
+    <!-- Link to your CSS file if needed -->
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>John Doe</h1>
+        <p class="tagline">Passionate Web Developer &amp; Digital Marketer</p>
+    </header>
+
+    <main>
+        <!-- Ordered List with Roman Numerals -->
+        <section aria-labelledby="ordered-list">
+            <h2 id="ordered-list">My Achievements</h2>
+            <ol type="I">
+                <li>Launched my first responsive website</li>
+                <li>Built a portfolio that increased client leads by 40%</li>
+                <li>Completed advanced certifications in web development</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section aria-labelledby="external-image">
+            <h2 id="external-image">About Me</h2>
+            <!-- This image represents my creative side -->
+            <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                alt="A creative workspace view" loading="lazy">
+        </section>
+
+        <!-- Contacts Table -->
+        <section aria-labelledby="contacts-table">
+            <h2 id="contacts-table">My Professional Network</h2>
+            <table border="1" cellspacing="0" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>123 Elm Street, Springfield</td>
+                        <td>+1 555-0101</td>
+                        <td>jane.smith@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Michael Brown</td>
+                        <td>456 Oak Avenue, Rivertown</td>
+                        <td>+1 555-0202</td>
+                        <td>michael.brown@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Lisa White</td>
+                        <td>789 Maple Road, Lakeview</td>
+                        <td>+1 555-0303</td>
+                        <td>lisa.white@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Robert Black</td>
+                        <td>321 Pine Street, Hilltop</td>
+                        <td>+1 555-0404</td>
+                        <td>robert.black@example.com</td>
+                    </tr>
+                    <tr>
+                        <td>Samantha Green</td>
+                        <td>654 Cedar Blvd, Brookside</td>
+                        <td>+1 555-0505</td>
+                        <td>samantha.green@example.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="registration" aria-labelledby="registration-heading">
+            <h2 id="registration-heading">Join My Community</h2>
+            <form action="/register" method="post" novalidate>
+                <!-- Name Field -->
+                <div>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <!-- Email Field -->
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                </div>
+                <!-- Password Field -->
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Create a password" required
+                        minlength="8">
+                </div>
+                <!-- Date Field -->
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <!-- Dropdown Field -->
+                <div>
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="">Select your country</option>
+                        <option value="us">United States</option>
+                        <option value="uk">United Kingdom</option>
+                        <option value="ca">Canada</option>
+                        <option value="au">Australia</option>
+                    </select>
+                </div>
+                <!-- Radio Buttons -->
+                <fieldset>
+                    <legend>Gender:</legend>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </fieldset>
+                <!-- Checkboxes -->
+                <fieldset>
+                    <legend>Interests:</legend>
+                    <div>
+                        <input type="checkbox" id="newsletter" name="interests" value="newsletter">
+                        <label for="newsletter">Subscribe to Newsletter</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="updates" name="interests" value="updates">
+                        <label for="updates">Receive Updates</label>
+                    </div>
+                </fieldset>
+                <!-- Submit Button -->
+                <div>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section aria-labelledby="multimedia">
+            <h2 id="multimedia">Multimedia Showcase</h2>
+            <!-- Audio Element -->
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <!-- Video Element -->
+            <video controls width="320" height="240">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 John Doe. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
